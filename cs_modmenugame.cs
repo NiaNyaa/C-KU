@@ -43,7 +43,7 @@ namespace pvztrainer
                 
                 if (unlimited)
                 {
-                    swed.WriteBytes(moduleBase, CoinAddress, "90 90 90 90 90 90"); // khusus nop cok
+                    swed.WriteBytes(moduleBase, CoinAddress, "90 90 90 90 90 90"); // khusus nop
                 }
                 else
                 {

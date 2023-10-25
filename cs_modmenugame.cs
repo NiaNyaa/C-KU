@@ -25,7 +25,7 @@ namespace pvztrainer
         protected override void Render()
         {
             ImGui.Begin("Plant Vs Zombie Mod Menu");
-            ImGui.Text("By Ikhsan");
+            ImGui.Text("By NiaNyaa");
             ImGui.Checkbox("No Pricing", ref unlimited);
             ImGui.Checkbox("No Delay", ref nodelay);
             ImGui.Checkbox("Unlimited Sun", ref money);

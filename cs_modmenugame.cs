@@ -4,7 +4,7 @@ using Swed32;
 using System.Net.NetworkInformation;
 using System.Net;
 
-namespace Insanitrainer
+namespace pvztrainer
 {
     public class Program : Overlay
     {

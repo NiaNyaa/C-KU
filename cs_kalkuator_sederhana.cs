@@ -34,6 +34,7 @@ class Program
                 int min2int = Convert.ToInt32(min2);
                 int hasilmin = min1int - min2int;
                 Console.WriteLine($"Hasil dari {min1} - {min2} adalah {hasilmin}");
+                Console.WriteLine();
             }
             else if (pilihan == "3")
             {
@@ -45,6 +46,7 @@ class Program
                 int kali2int = Convert.ToInt32(kali2);
                 int hasilkali = kaliint * kali2int;
                 Console.WriteLine($"Hasil dari {kali1} x {kali2} adalah {hasilkali}");
+                Console.WriteLine();
             }
             else if (pilihan == "4")
             {
@@ -56,6 +58,7 @@ class Program
                 double bagi2int = Convert.ToDouble(bagi2);
                 double hasilbagi = bagi1int / bagi2int;
                 Console.WriteLine($"Hasil dari {bagi1} : {bagi2} adalah {hasilbagi}");
+                Console.WriteLine();
             }
             else
             {

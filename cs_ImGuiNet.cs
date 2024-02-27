@@ -6,20 +6,26 @@ namespace Program
 {
     public class Program : Overlay
     {
+        private int sliderValue = 0;
+        private string inputText = "";
         protected override void Render()
         {
             ImGui.Begin("ImGuiNet");
-            ImGui.Text("By NiaNyaa");
-            ImGui.End(); // End the ImGui window
+            ImGui.Text("By Ikhsan");
+            ImGui.SliderInt("Slider", ref sliderValue, 0, 10);
+            Console.WriteLine(sliderValue.ToString());
+            ImGui.Text(sliderValue.ToString());
+            ImGui.InputText("Input Field", ref inputText, 100);
+            ImGui.Text(inputText);
+            ImGui.End();
         }
 
         public override async Task Run()
         {
-            // Implement any necessary logic for the Run method
+  
             while (true)
             {
-                // Perform operations or wait for events
-                await Task.Delay(1000); // For example, wait for 1 second
+                await Task.Delay(1000);
             }
         }
 
@@ -27,7 +33,7 @@ namespace Program
         {
             Program program = new Program();
             program.Start().Wait();
-            program.Run().Wait(); // Since Run is now async, we need to await it
+            program.Run().Wait();
         }
     }
 }

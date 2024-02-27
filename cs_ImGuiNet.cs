@@ -10,7 +10,8 @@ namespace Program
     {
         private int sliderValue = 0;
         private string inputText = "";
-        private int inputText2 = 1;
+        private int inputText2 = 0;
+        private int inputText3 = 0;
 
         protected override void Render()
         {
@@ -25,8 +26,10 @@ namespace Program
             ImGui.InputText("Input", ref inputText, 100);
             ImGui.Text(inputText);
             // input int?
-            ImGui.InputInt("", ref inputText2, 1);
-            ImGui.Text(inputText2.ToString());
+            ImGui.InputInt("Input 1", ref inputText2, 1);
+            ImGui.InputInt("Input 2", ref inputText3, 1);
+            int hasil = inputText2 + inputText3;
+            ImGui.Text(hasil.ToString());
             ImGui.End();
         }
 
@@ -40,6 +43,7 @@ namespace Program
 
         public static void Main()
         {
+            Console.WriteLine("Starting...");
             Program program = new();
             program.Start().Wait();
             Thread T1 = new(Logic) { IsBackground = true };

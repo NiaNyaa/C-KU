@@ -51,3 +51,10 @@ namespace Program
         }
     }
 }
+
+
+//vortice.math -1.6.2
+//clickable = 6.2.1
+//imguinet 1.89.7.1
+//sixlabors = 3.0.1
+//veldridimgui = 5.72.0
